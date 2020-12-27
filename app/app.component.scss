@@ -1,0 +1,11 @@
+
+ion-toolbar{
+  position: relative;
+  text-align: center;
+  --background: linear-gradient(90deg, #0ff1d8 0%, #664bdc 100%);
+  margin: auto;
+  ion-avatar{
+    position: relative;
+    margin: auto;
+  }
+}

@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title size="bold" align="center">Find Student</ion-title>
+    <button [routerLink]="['/semm3242']" class = "back_button_semm3242">
+      <ion-icon name="arrow-back"></ion-icon>
+    </button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class = "find-student">
+    <ion-input [(ngModel)]="matric_number" class="matric-number"  shape="round" placeholder="Matric Number"></ion-input>
+    <ion-button (click)="getlist()" class = "find-btn" shape="round" expand="full">Find</ion-button>
+  </div>
+
+
+  <div class ="result-text">
+    <ion-list>
+      <ion-item class="title-40px">
+        <ion-label align="center">NAME</ion-label>
+        <ion-label align="center">DATE & TIME</ion-label>
+      </ion-item>
+
+      <ion-item class="item-40px" *ngFor="let x of data_list;let index=index">
+        <ion-grid>
+          <ion-row>
+            <ion-col class="text-border-name">
+              <p>{{index+1}}. {{x.name}}</p>
+            </ion-col>
+            <ion-col align="center" class="text-border-name">
+              <p>{{x.date}} <br> {{x.time}}</p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+    </ion-list>
+  </div>
+
+</ion-content>

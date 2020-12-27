@@ -1,0 +1,45 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title size="bold" align="center">Attendance Student </ion-title>
+    <button [routerLink]="['/semm3242']" class = "back_button_semm3242">
+      <ion-icon name="arrow-back"></ion-icon>
+    </button>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+  <div>
+    <ion-datetime class = "calender-text" displayFormat="DD/MM/YYYY" [(ngModel)]="from_date" (ionChange)="setDate()"></ion-datetime>
+    <ion-avatar  (click)="openCalendar()" class="avatar-calender">
+      <img src="../../assets/image/calender.png"/>
+    </ion-avatar>
+
+    <ion-button (click)="list_date()" class = "attendance-btn" shape="round" expand="full">GET LIST</ion-button>
+  </div>
+
+  <div class ="result-text">
+    <ion-list>
+      <ion-item class="title-40px">
+        <ion-label align="center">NAME</ion-label>
+        <ion-label align="center">DATE & TIME</ion-label>
+      </ion-item>
+
+      <ion-item class="item-40px" *ngFor="let x of data_list;let index=index">
+
+        <ion-grid>
+          <ion-row>
+            <ion-col align="left" class="text-border-name">
+              <p>{{index+1}}. {{x.name}}</p>
+            </ion-col>
+            <ion-col align="center" class="text-border-name">
+              <p>{{x.date}} <br> {{x.time}}</p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+    </ion-list>
+  </div>
+
+</ion-content>

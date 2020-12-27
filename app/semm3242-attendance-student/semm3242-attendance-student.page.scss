@@ -1,0 +1,78 @@
+ion-content{
+  --background: #c7c7c7;
+}
+
+ion-toolbar{
+  --background: linear-gradient(0deg, #a27180 0%, #600724 100%);
+  //height: 70px;
+}
+ion-title{
+  color: white;
+}
+
+.back_button_semm3242{
+  color: white;
+  position: absolute;
+  top: 55%;
+  left: 10%;
+  border-radius: none;
+  background: none;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 50px;
+  font-size: 30px;
+}
+.title-label{
+  font-size: 80%;
+  font-weight: bold;
+  --border-color: blue;
+}
+
+.calender-text{
+  --background: linear-gradient(90deg, #8c36a5 0%, #664bdc 100%);
+  position: absolute;
+  top: 5%;
+  left: 35%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 45%;
+  //height: 7%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.avatar-calender{
+  --background: #a7a3a3;
+  width: 50px !important;
+  height : 50px !important;
+  position: absolute;
+  top: 5%;
+  left: 78%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+.result-text{
+  position: absolute;
+  top: 20%;
+  width: 100%;
+}
+
+.attendance-btn{
+  --background: linear-gradient(180deg, #a27180 0%, #600724 100%);
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 7%;
+  font-size: 15px;
+}
+
+.text-border-name{
+  font-size: 13px;
+}
+

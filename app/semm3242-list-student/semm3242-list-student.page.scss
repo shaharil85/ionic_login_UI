@@ -1,0 +1,29 @@
+ion-content{
+  --background: #c7c7c7;
+}
+
+
+ion-toolbar{
+  --background: linear-gradient(0deg, #a27180 0%, #600724 100%);
+  //height: 70px;
+}
+
+.back_button_semm3242{
+
+  color: white;
+  position: absolute;
+  top: 55%;
+  left: 10%;
+  border-radius: none;
+  background: none;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 50px;
+  font-size: 30px;
+}
+.title-label{
+  font-size: 80%;
+  font-weight: bold;
+  --border-color: blue;
+}
+

@@ -1,0 +1,83 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class = "title_welcome">
+      Welcome
+    </ion-title>
+  </ion-toolbar>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" size-lg="3" size-md="4" size-sm ="6" size-xs="12" >
+        <ion-card [routerLink]="['/semm3242']" class = "ion-card-semm3242">
+                <ion-img src="../../assets/image/instrumentation.jpg"></ion-img>
+                <div class="card-title_semm3242">SEMM3242 - Instrumentation</div>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="12" size-lg="3" size-md="4" size-sm ="6" size-xs="12" >
+        <ion-card [routerLink]="['/semm3233']" class = "ion-card-semm3242">
+                  <ion-img src="../../assets/image/control.jpg"></ion-img>
+                  <div class="card-title_semm3233">SEMM3233 - Control Engineering</div>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="12" size-lg="3" size-md="4" size-sm ="6" size-xs="12" >
+        <ion-card [routerLink]="['/semm1013']"  class = "ion-card-semm3242">
+                  <ion-img src="../../assets/image/programming.png"></ion-img>
+                  <div class="card-title_semm3233">SEMM1013 - Programming for Engineer</div>
+        </ion-card>
+      </ion-col>
+
+    </ion-row>
+
+  </ion-grid>
+
+<!--  <ion-grid id="container_button">-->
+<!--    <ion-row>-->
+<!--      <ion-card [routerLink]="['/semm3242']" class = "ion-card-semm3242">-->
+<!--        <img src="../../assets/image/instrumentation.jpg"/>-->
+<!--        <div class="card-title_semm3242">SEMM3242 - Instrumentation</div>-->
+<!--      </ion-card>-->
+<!--    </ion-row>-->
+<!--    <ion-row>-->
+<!--      <ion-card [routerLink]="['/semm3233']" class = "ion-card-semm3242">-->
+<!--        <img src="../../assets/image/control.jpg"/>-->
+<!--        <div class="card-title_semm3233">SEMM3233 - Control Engineering</div>-->
+<!--      </ion-card>-->
+<!--    </ion-row>-->
+<!--    <ion-row>-->
+<!--      <ion-card [routerLink]="['/semm1013']"  class = "ion-card-semm3242">-->
+<!--        <img src="../../assets/image/programming.png"/>-->
+<!--        <div class="card-title_semm3233">SEMM1013 - Programming for Engineer</div>-->
+<!--      </ion-card>-->
+<!--    </ion-row>-->
+
+<!--  </ion-grid>-->
+
+
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+
+      <ion-tab-button [routerLink]="['/page1']">
+        <ion-icon name="person-circle"></ion-icon>
+        <ion-label>Call</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button [routerLink]="['/page2']">
+        <ion-icon name="send"></ion-icon>
+        <ion-label>Send</ion-label>
+      </ion-tab-button>
+
+    </ion-tab-bar>
+  </ion-tabs>
+
+
+</ion-content>

@@ -1,0 +1,29 @@
+
+
+<ion-content [fullscreen]="true">
+
+    <ion-text>
+        <h1>Welcome</h1>
+        <p>Get started by logging<br>into your account</p>
+    </ion-text>
+
+
+
+    <div class = "login-text">
+
+        <ion-input [(ngModel)]="user_name" class="username"  shape="round" placeholder="Username">
+            <ion-icon name="person-circle-outline"></ion-icon>
+        </ion-input>
+
+        <ion-input [(ngModel)]="pass_word" class="password" type="password"  shape="round" placeholder="Password">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+        </ion-input>
+
+    </div>
+
+    <ion-button (click)="login_page()" class = "sigin-btn" shape="round" expand="full">Login</ion-button>
+
+
+
+
+</ion-content>

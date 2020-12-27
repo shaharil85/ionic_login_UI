@@ -1,0 +1,14 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title size="bold" align="center">SEMM 3233</ion-title>
+    <button [routerLink]="['/login']" class = "back_button">
+      <ion-icon name="arrow-back"></ion-icon>
+    </button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button [routerLink]="['/find-student']" class="find-btn" shape="round" expand="full">Find Student</ion-button>
+  <ion-button [routerLink]="['/list-student']" class = "list-btn" shape="round" expand="full">List All Student</ion-button>
+  <ion-button [routerLink]="['/attendance-student']" class = "attendance-btn" shape="round" expand="full">Attendance</ion-button>
+</ion-content>

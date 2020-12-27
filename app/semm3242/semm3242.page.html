@@ -1,0 +1,16 @@
+<ion-header >
+  <ion-toolbar>
+    <ion-title align="center" color="light">SEMM 3242</ion-title>
+    <button [routerLink]="['/login']" class = "back_button">
+      <ion-icon name="arrow-back" color="light"></ion-icon>
+    </button>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content color="#0ff1d8">
+  <ion-button [routerLink]="['/semm3242-find-student']" class="find-btn" shape="round" expand="full" fill="outline">Find Student</ion-button>
+  <ion-button [routerLink]="['/semm3242-list-student']" class = "list-btn" shape="round" expand="full" fill="outline">List All Student</ion-button>
+  <ion-button [routerLink]="['/semm3242-attendance-student']" class = "attendance-btn" shape="round" expand="full" fill="outline">Attendance</ion-button>
+</ion-content>
+

@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title color="light" size="bold" align="center">Student List</ion-title>
+    <button [routerLink]="['/semm3242']" class = "back_button_semm3242">
+      <ion-icon name="arrow-back"></ion-icon>
+    </button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item class="title-label">
+      <ion-label>NAME</ion-label>
+    </ion-item>
+    <ion-item class="title-label" *ngFor="let x of data_list;let index=index">
+      <ion-label>
+        <p> {{index+1}}.  {{x.name}}</p>
+        <p> {{x.matric}}</p>
+        <p> {{x.sec}} - {{x.code}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

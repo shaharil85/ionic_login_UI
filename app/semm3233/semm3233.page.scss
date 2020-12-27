@@ -1,0 +1,44 @@
+
+ion-toolbar{
+  --background: linear-gradient(90deg, #0ff1d8 0%, #664bdc 100%);
+}
+
+.find-btn{
+  --background: linear-gradient(90deg, #8c36a5 0%, #664bdc 100%);
+  position: absolute;
+  top: 4.5%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 7%;
+  font-size: 15px;
+}
+
+.list-btn{
+  --background: linear-gradient(90deg, #8c36a5 0%, #664bdc 100%);
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 7%;
+  font-size: 15px;
+}
+
+.attendance-btn{
+  --background: linear-gradient(90deg, #8c36a5 0%, #664bdc 100%);
+  position: absolute;
+  top: 21.5%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 7%;
+  font-size: 15px;
+}
+
+
+
+
